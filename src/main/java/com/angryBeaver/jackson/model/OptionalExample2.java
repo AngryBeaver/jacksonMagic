@@ -1,0 +1,26 @@
+package com.angryBeaver.jackson.model;
+
+import io.swagger.annotations.ApiModelProperty;
+
+import java.util.Optional;
+
+public class OptionalExample2 {
+    String title;
+    String subTitle;
+
+    public Optional<String> getSubTitle() {
+        return Optional.ofNullable(subTitle);
+    }
+
+    public void setSubTitle(String subTitle) {
+        this.subTitle = subTitle;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+}
