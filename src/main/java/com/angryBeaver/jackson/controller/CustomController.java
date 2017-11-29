@@ -85,4 +85,9 @@ public class CustomController {
         return hiddenporperties.getTitle();
     }
 
+    @RequestMapping(value = "/magicProperties", method = RequestMethod.POST)
+    public MagicProperties get(@RequestBody MagicProperties magicProperties) {
+        return magicProperties;
+    }
+
 }
